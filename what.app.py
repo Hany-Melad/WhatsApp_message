@@ -1,0 +1,20 @@
+from selenium import webdriver
+from selenium.webdriver.common.keys import Keys 
+import time 
+web =webdriver.Firefox(executable_path=r'C:\Users\NoteBook\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Python 3.7\geckodriver.exe')
+web.get('https://web.whatsapp.com')
+time.sleep(50)
+s=web.find_element_by_css_selector('._1awRl')
+s.send_keys('0122450')
+time.sleep(3)
+s.send_keys(Keys.ENTER)
+w=web.find_element_by_css_selector('._1hRBM > div:nth-child(2)')
+w.send_keys('you are haced')
+w.send_keys(Keys.ENTER)
+time.sleep(3)
+w.send_keys('you are haced')
+w.send_keys(Keys.ENTER)
+time.sleep(3)
+w.send_keys('you are haced')
+w.send_keys(Keys.ENTER)
+time.sleep(3)
